@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+:root {
+  --hue-neutral: 200;
+  --hue-wrong: 0;
+  --hue-correct: 145;
+}
+
+body {
+  --hue: var(--hue-neutral);
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column-reverse;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+  background-image: url(./images/background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+button.correct {
+  --hue: var(--hue-correct);
+}
+
+button.wrong {
+  --hue: var(--hue-wrong);
+}
+
+.container {
+  width: 800px;
+  max-width: 80%;
+  min-height: 250px;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 0 10px 2px;
+  background: rgba(1, 48, 92, 0.56);
+  border-radius: 20px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.8px);
+  -webkit-backdrop-filter: blur(7.8px);
+  border: 5px solid rgba(1, 48, 92, 0.57);
+}
+
+#question {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 25px;
+  margin-left: 4px;
+}
+
+.btn-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin: 20px 0;
+}
+
+#total-score-container {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#total-score-container p {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: white;
+  margin-bottom: 15px;
+}
+
+#total-score {
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+  margin: 30px 0;
+}
+
+.btn {
+  --hue: var(--hue-neutral);
+  border: 2px solid hsl(var(--hue), 100%, 30%);
+  border-radius: 16px;
+  color: white;
+  background-color: hsl(var(--hue), 100%, 50%);
+  height: 50px;
+  padding: 5px 10px;
+  outline: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.btn:hover {
+  border-color: #0088ff;
+}
+
+.start-btn,
+.next-btn {
+  margin-top: 0.5rem;
+  width: 175px;
+  height: 50px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hide {
+  display: none;
+}
+
+#score {
+  background-color: #0088ff;
+  border-radius: 20px;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid rgb(175, 175, 175);
+  margin-bottom: 8px;
+}
+
+#right-answers {
+  font-weight: bold;
+  color: white;
+  font-size: 1.1rem;
+}
+
+/* small devices */
+@media screen and (max-width: 720px) {
+  .container {
+    height: 415px;
+  }
+
+  .btn-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
