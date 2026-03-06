@@ -5,7 +5,7 @@ Even Sem 2026 Active
 
 👩‍🏫 Instructor
 Ms. Mansi Kajal
-
+ 
 📚 Course Experiments
 Experiment-1: Portfolio Website
 Personal portfolio website with sections for About, Skills, Projects, and Contact. Includes basic JavaScript interactivity and optional contact form.
