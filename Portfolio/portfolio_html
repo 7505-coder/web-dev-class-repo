@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Ishan Jha (XylaN)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">Ishan Jha.</a>
+            <div class="nav-menu">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <span class="greeting">Hello, I'm</span>
+                <h1 class="hero-title">Ishan Jha</h1>
+                <p class="hero-subtitle">AI/ML & DataScience Enthusiast</p>
+                <p class="hero-description">Turning data into insights and building intelligent solutions with code</p>
+                <div class="hero-buttons">
+                    <a href="#skills" class="btn btn-primary">My Skills</a>
+                    <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </header>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">01</span>
+                <h2 class="section-title">About Me</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="lead">I'm Ishan Jha (aka XylaN), a passionate developer from India exploring the world of AI/ML and DataScience.</p>
+                    <p>I love turning complex problems into simple, elegant solutions. My journey in tech is driven by curiosity and a passion for learning new technologies.</p>
+                    <p>When I'm not coding, you'll find me exploring new tech trends, working on data-driven projects, or honing my development skills.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">02</span>
+                <h2 class="section-title">Skills & Expertise</h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="skill-icon">🤖</div>
+                    <h3>AI/ML</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Machine Learning</span>
+                        <span class="skill-tag">Deep Learning</span>
+                        <span class="skill-tag">TensorFlow</span>
+                        <span class="skill-tag">PyTorch</span>
+                        <span class="skill-tag">Computer Vision</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-icon">📊</div>
+                    <h3>Data Science</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Data Analysis</span>
+                        <span class="skill-tag">Pandas</span>
+                        <span class="skill-tag">NumPy</span>
+                        <span class="skill-tag">Data Visualization</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-icon">💻</div>
+                    <h3>Web Development</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Node.js</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">03</span>
+                <h2 class="section-title">What I Do</h2>
+            </div>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="project-content">
+                        <span class="project-type">AI/ML</span>
+                        <h3 class="project-title">Machine Learning Solutions</h3>
+                        <p class="project-description">Building intelligent models for prediction, classification, and data analysis. Working with neural networks and deep learning frameworks.</p>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div class="project-content">
+                        <span class="project-type">Data Science</span>
+                        <h3 class="project-title">Data Analysis & Visualization</h3>
+                        <p class="project-description">Transforming raw data into meaningful insights. Creating visualizations and dashboards to tell stories with data.</p>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div class="project-content">
+                        <span class="project-type">Development</span>
+                        <h3 class="project-title">Web Applications</h3>
+                        <p class="project-description">Building responsive and modern web applications with clean code and great user experience.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">04</span>
+                <h2 class="section-title">Get In Touch</h2>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Connect</h3>
+                    <p>Feel free to reach out for collaborations, projects, or just to say hi! I'm always happy to connect with fellow tech enthusiasts.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <span class="contact-icon">📧</span>
+                            <span>Ishanjha18@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📱</span>
+                            <span>+91 8750044429</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📍</span>
+                            <span>India</span>
+                        </div>
+                    </div>
+                </div>
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-submit">Send Message</button>
+                    <div id="formMessage" class="form-message"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2026 Ishan Jha (XylaN). Built with passion and code.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link">GitHub</a>
+                    <a href="#" class="social-link">LinkedIn</a>
+                    <a href="#" class="social-link">Twitter</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
