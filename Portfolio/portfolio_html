@@ -9,7 +9,7 @@
 <body>
     <nav class="navbar">
         <div class="nav-container">
-            <a href="#home" class="logo">Ishan Jha.</a>
+            <a href="#home" class="logo">umang gupta.</a>
             <div class="nav-menu">
                 <a href="#about" class="nav-link">About</a>
                 <a href="#skills" class="nav-link">Skills</a>
@@ -23,7 +23,7 @@
         <div class="hero-content">
             <div class="hero-text">
                 <span class="greeting">Hello, I'm</span>
-                <h1 class="hero-title">Ishan Jha</h1>
+                <h1 class="hero-title">umang gupta</h1>
                 <p class="hero-subtitle">AI/ML & DataScience Enthusiast</p>
                 <p class="hero-description">Turning data into insights and building intelligent solutions with code</p>
                 <div class="hero-buttons">
@@ -46,7 +46,7 @@
             </div>
             <div class="about-content">
                 <div class="about-text">
-                    <p class="lead">I'm Ishan Jha (aka XylaN), a passionate developer from India exploring the world of AI/ML and DataScience.</p>
+                    <p class="lead">I'm umang gupta(aka XylaN), a passionate developer from India exploring the world of AI/ML and DataScience.</p>
                     <p>I love turning complex problems into simple, elegant solutions. My journey in tech is driven by curiosity and a passion for learning new technologies.</p>
                     <p>When I'm not coding, you'll find me exploring new tech trends, working on data-driven projects, or honing my development skills.</p>
                 </div>
@@ -143,11 +143,11 @@
                     <div class="contact-details">
                         <div class="contact-item">
                             <span class="contact-icon">📧</span>
-                            <span>Ishanjha18@gmail.com</span>
+                            <span>umanggupta7505@gmail.com</span>
                         </div>
                         <div class="contact-item">
                             <span class="contact-icon">📱</span>
-                            <span>+91 8750044429</span>
+                            <span>+91 8630423845</span>
                         </div>
                         <div class="contact-item">
                             <span class="contact-icon">📍</span>
@@ -175,7 +175,7 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <p>&copy; 2026 Ishan Jha (XylaN). Built with passion and code.</p>
+                <p>&copy; 2026 umang gupta (XylaN). Built with passion and code.</p>
                 <div class="social-links">
                     <a href="#" class="social-link">GitHub</a>
                     <a href="#" class="social-link">LinkedIn</a>
