@@ -1,0 +1,38 @@
+<%- include("../partials/header") %>
+
+<section class="page-head reveal">
+  <div>
+    <p class="eyebrow">Discover</p>
+    <h1>Browse Events</h1>
+  </div>
+  <form method="GET" action="/events" class="search-form">
+    <input type="text" name="q" value="<%= q %>" placeholder="Search by title, location, keyword..." />
+    <button type="submit" class="btn btn-primary">Search</button>
+  </form>
+</section>
+
+<% if (!events.length) { %>
+  <section class="empty-state reveal">
+    <h2>No events found</h2>
+    <p>Try a different search or create a new event.</p>
+    <% if (currentUser) { %>
+      <a class="btn btn-primary" href="/events/new">Create Event</a>
+    <% } %>
+  </section>
+<% } %>
+
+<section class="event-grid">
+  <% events.forEach((event) => { %>
+    <article class="event-card reveal">
+      <p class="event-meta"><%= dayjs(event.starts_at).format("MMM D, YYYY h:mm A") %> • <%= event.location %></p>
+      <h3><a href="/events/<%= event.id %>"><%= event.title %></a></h3>
+      <p><%= event.description.length > 140 ? `${event.description.slice(0, 140)}...` : event.description %></p>
+      <div class="event-card-footer">
+        <span>Host: <%= event.owner_name %></span>
+        <span><strong><%= event.seats_available %></strong>/<%= event.capacity %> seats</span>
+      </div>
+    </article>
+  <% }) %>
+</section>
+
+<%- include("../partials/footer") %>

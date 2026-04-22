@@ -1,0 +1,59 @@
+<%- include("partials/header") %>
+
+<section class="hero reveal">
+  <div>
+    <p class="eyebrow">Plan. Publish. Pack the House.</p>
+    <h1>Run unforgettable events with less chaos.</h1>
+    <p class="lead">
+      EventHub helps you create events, manage capacity, and track bookings in one smooth workflow.
+    </p>
+    <div class="hero-actions">
+      <a href="/events" class="btn btn-primary">Explore Events</a>
+      <% if (!currentUser) { %>
+        <a href="/register" class="btn btn-outline">Start Free</a>
+      <% } else { %>
+        <a href="/events/new" class="btn btn-outline">Create Event</a>
+      <% } %>
+    </div>
+    <p class="demo-note">Demo login: admin@example.com / admin123</p>
+  </div>
+  <div class="hero-card reveal-delay">
+    <h3>Live Capacity Insights</h3>
+    <p>Every booking instantly updates available seats to prevent overbooking.</p>
+    <div class="metric-grid">
+      <div>
+        <strong>100%</strong>
+        <span>Booking tracking</span>
+      </div>
+      <div>
+        <strong>1-click</strong>
+        <span>Cancellation flow</span>
+      </div>
+      <div>
+        <strong>Fast</strong>
+        <span>Server-rendered pages</span>
+      </div>
+      <div>
+        <strong>Secure</strong>
+        <span>Hashed passwords</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="feature-grid">
+  <article class="feature reveal">
+    <h3>Event CRUD</h3>
+    <p>Create, edit, and delete events you host, all from one dashboard.</p>
+  </article>
+  <article class="feature reveal-delay">
+    <h3>Bookings</h3>
+    <p>Attendees reserve seats quickly and can cancel bookings anytime.</p>
+  </article>
+  <article class="feature reveal-delay-2">
+    <h3>Search</h3>
+    <p>Users can find events by title, location, or keyword in seconds.</p>
+  </article>
+</section>
+
+<%- include("partials/footer") %>

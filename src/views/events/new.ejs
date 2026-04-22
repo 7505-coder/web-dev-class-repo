@@ -1,0 +1,37 @@
+<%- include("../partials/header") %>
+
+<section class="form-card reveal">
+  <h1>Create Event</h1>
+
+  <form action="/events" method="POST" class="form-grid">
+    <label>
+      Title
+      <input type="text" name="title" required value="<%= (input && input.title) || '' %>" />
+    </label>
+    <label>
+      Description
+      <textarea name="description" rows="5" required><%= (input && input.description) || '' %></textarea>
+    </label>
+    <label>
+      Location
+      <input type="text" name="location" required value="<%= (input && input.location) || '' %>" />
+    </label>
+    <div class="split-2">
+      <label>
+        Starts At
+        <input type="datetime-local" name="starts_at" required value="<%= (input && input.starts_at) || '' %>" />
+      </label>
+      <label>
+        Ends At
+        <input type="datetime-local" name="ends_at" required value="<%= (input && input.ends_at) || '' %>" />
+      </label>
+    </div>
+    <label>
+      Capacity
+      <input type="number" name="capacity" min="1" required value="<%= (input && input.capacity) || '50' %>" />
+    </label>
+    <button type="submit" class="btn btn-primary">Create Event</button>
+  </form>
+</section>
+
+<%- include("../partials/footer") %>
